@@ -1,5 +1,7 @@
 import React, {useState} from "react";
 
+// useState
+
 function App() {
 
   // returns always an array of two values: 
@@ -50,5 +52,5 @@ export default App;
  * 2. hooks must always be on top of the function, always called in the exact same order. (Not in if statements, functions, loops, etc)
  * 3. best to use setState with arrow function (using previous state value) than just with one argument
  * 4. if you have complex inital values set them with arrow funtions, gets computed only once! ex: useState(() => { logic...; return bla})
- * 5. if you have objects as states it is simpler to divide their prioperties anf manage the state, each one in a useState hook
+ * 5. if you have objects as states it is simpler to divide their prioperties and manage the state, each one in a useState hook
  */

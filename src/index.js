@@ -2,12 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './UseStateEx';
 import UseEffectEx from './UseEffectEx';
+import UseMemoEx from './UseMemoEx';
+import UseMemoEx2 from './UseMemoEx2';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <UseEffectEx />
     {/* <App /> */}
+    {/* <UseEffectEx /> */}
+    {/* <UseMemoEx /> */}
+    <UseMemoEx2 />
   </React.StrictMode>
 );
 

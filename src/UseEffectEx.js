@@ -17,7 +17,7 @@ export const UseEffectEx = () => {
                 //this gets run first (than the code above) to cleanup whatever we did last time!
                 // examples to do here, -> if above subscribes you to API, here unsubscribe you from an API
                 // -> remove event listeners
-                console.log("return from use effect");
+                console.log("return from use effect, this  was called before the api called");
             }
     }, [resource])
 

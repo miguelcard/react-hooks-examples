@@ -4,6 +4,9 @@ import App from './UseStateEx';
 import UseEffectEx from './UseEffectEx';
 import UseMemoEx from './UseMemoEx';
 import UseMemoEx2 from './UseMemoEx2';
+import UseRefEx from './UseRefEx';
+import UseRefEx2 from './UseRefEx2';
+import UseRefEx3 from './UseRefEx3';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -11,7 +14,10 @@ root.render(
     {/* <App /> */}
     {/* <UseEffectEx /> */}
     {/* <UseMemoEx /> */}
-    <UseMemoEx2 />
+    {/* <UseMemoEx2 /> */}
+    {/* <UseRefEx /> */}
+    {/* <UseRefEx2 /> */}
+    <UseRefEx3 />
   </React.StrictMode>
 );
 

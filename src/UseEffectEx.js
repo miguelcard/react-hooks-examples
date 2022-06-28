@@ -40,4 +40,15 @@ export default UseEffectEx;
 /**
  * Notes: use useEffect anytime that you want to have a side effect occur. Than can be:
  * When component Mounts, Unmounts, a variable changes, state changes,  props change, anything changes
+ * 
+ * -> About rendering: Changing state will always cause a re-render. By default, useEffect always runs after
+ *  render has run. 
+ * This means if you don't include a dependency array when using useEffect to fetch data, 
+ * and use useState to display it, you will trigger another render after useEffect runs.
+ * 
+ * -> In short, not all useEffect hooks re-render the value
+ * The only things that cause a re-render in React are the following:
+    1. A state change within the component (via the useState or useReducer hooks)
+    2. A prop change
+    3. A parent render (due to 1. 2. or 3.) if the component is not memoized or otherwise referentially the same
  */

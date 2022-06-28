@@ -27,7 +27,11 @@ export const UseMemoEx2 = () => {
 
     return (
         <>
-            <input type="number" value={number} onChange={e => setNumber(parseInt(e.target.value))} />
+            <input
+                type="number"
+                value={number}
+                onChange={e => setNumber(parseInt(e.target.value))}
+            />
             <button onClick={() => setDark(prevDark => !prevDark)}>ChangeTheme</button>
             <div style={themeStyles}>BLA</div>
         </>

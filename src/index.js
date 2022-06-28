@@ -7,6 +7,9 @@ import UseMemoEx2 from './UseMemoEx2';
 import UseRefEx from './UseRefEx';
 import UseRefEx2 from './UseRefEx2';
 import UseRefEx3 from './UseRefEx3';
+import UseReducerEx from './UseReducerEx';
+import UseReducerEx2 from './UseReducerEx2';
+import { UseCallbackEx } from './UseCallbackEx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,7 +20,10 @@ root.render(
     {/* <UseMemoEx2 /> */}
     {/* <UseRefEx /> */}
     {/* <UseRefEx2 /> */}
-    <UseRefEx3 />
+    {/* <UseRefEx3 /> */}
+    {/* <UseReducerEx /> */}
+    {/* <UseReducerEx2 /> */}
+    <UseCallbackEx />
   </React.StrictMode>
 );
 
@@ -25,3 +31,5 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 // reportWebVitals();
+
+// skipped hooks TODO: 0. useCallback 1.customHooks, 2.useContext, 3. useLayoutEffect ... leave the rest for after

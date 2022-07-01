@@ -10,6 +10,8 @@ import UseRefEx3 from './UseRefEx3';
 import UseReducerEx from './UseReducerEx';
 import UseReducerEx2 from './UseReducerEx2';
 import { UseCallbackEx } from './UseCallbackEx';
+import {CustomHooksUseLocalStorage} from './CustomHooksUseLocalStorage';
+import { UseContextEx } from './UseContextEx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -23,7 +25,9 @@ root.render(
     {/* <UseRefEx3 /> */}
     {/* <UseReducerEx /> */}
     {/* <UseReducerEx2 /> */}
-    <UseCallbackEx />
+    {/* <UseCallbackEx /> */}
+    {/* <CustomHooksUseLocalStorage /> */}
+    <UseContextEx />
   </React.StrictMode>
 );
 
@@ -32,4 +36,4 @@ root.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 // reportWebVitals();
 
-// skipped hooks TODO: 0. useCallback 1.customHooks, 2.useContext, 3. useLayoutEffect ... leave the rest for after
+// skipped hooks TODO: 2.useContext, 3. useLayoutEffect ... leave the rest for after

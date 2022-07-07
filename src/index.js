@@ -12,22 +12,41 @@ import UseReducerEx2 from './UseReducerEx2';
 import { UseCallbackEx } from './UseCallbackEx';
 import {CustomHooksUseLocalStorage} from './CustomHooksUseLocalStorage';
 import { UseContextEx } from './UseContextEx';
+import { UseLayoutEffectEx } from './UseLayoutEffectEx';
+import { UseTransitionEx } from './UseTransitionEx';
+import { UseDeferredValueEx } from './UseDeferredValueEx';
+import { UseImperativeHandleEx } from './UseImperativeHandleEx';
+import { UseImperativeHandleEx2 } from './UseImperativeHandleEx2';
+import { UseDebugEx } from './UseDebugEx';
+import { UseIdEx } from './UseIdEx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
+
+    {/* <UseStateEx /> */}
     {/* <UseEffectEx /> */}
-    {/* <UseMemoEx /> */}
-    {/* <UseMemoEx2 /> */}
+    {/* <UseContextEx /> */}
+
     {/* <UseRefEx /> */}
     {/* <UseRefEx2 /> */}
     {/* <UseRefEx3 /> */}
+    {/* <UseMemoEx /> */}
+    {/* <UseMemoEx2 /> */}
+    {/* <UseCallbackEx /> */}
     {/* <UseReducerEx /> */}
     {/* <UseReducerEx2 /> */}
-    {/* <UseCallbackEx /> */}
+    {/* <UseTransitionEx /> */}
+    {/* <UseDeferredValueEx /> */}
+
+    {/* <UseLayoutEffectEx /> */}
+    {/* <UseImperativeHandleEx /> */}
+    {/* <UseImperativeHandleEx2 /> */}
+    {/* <UseDebugEx /> */}
+    <UseIdEx />
+
     {/* <CustomHooksUseLocalStorage /> */}
-    <UseContextEx />
   </React.StrictMode>
 );
 
@@ -35,5 +54,3 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 // reportWebVitals();
-
-// skipped hooks TODO: 2.useContext, 3. useLayoutEffect ... leave the rest for after

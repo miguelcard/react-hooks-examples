@@ -1,9 +1,9 @@
-import React, { useContext } from 'react'
-import { ThemeContext, ToggleThemeContext, useTheme, useToogleTheme } from './ThemeCustomContext';
+import React from 'react'
+import { useTheme, useToogleTheme } from './ThemeCustomContext';
 
 export const UseContextChild = () => {
 
-    const isDarkTheme = useTheme() // custom hooks to call the value for a given context
+    const isDarkTheme = useTheme() // custom hooks to call the value for a given context, the other option is to call the value directly like: useContext(ThemeContext)
     const toggleTheme = useToogleTheme()
 
     const themeStyles = {

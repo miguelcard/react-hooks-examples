@@ -22,6 +22,13 @@ export function ThemeCustomProvider({ children }) {
   )
 }
 
+export function useTheme(){
+  return useContext(ThemeContext); // useContext() just calls the value for a given (Parent/Global) context
+}
+
+export function useToogleTheme(){
+  return useContext(ToggleThemeContext);
+}
 
 /**
  * -> the onclick=toggleTheme button there is fine but the better idea would be to allow the theme to be updated from anywhere in the child components, in anyway we want 
@@ -33,11 +40,3 @@ export function ThemeCustomProvider({ children }) {
 
 // you can also create two small custom hooks, just to return the context values to the child components in this case (easy access)
 // that way you dont need to export  ThemeContext and ToggleThemeContext at all
-
-export function useTheme(){
-  return useContext(ThemeContext); // just calls the value for a given context
-}
-
-export function useToogleTheme(){
-  return useContext(ToggleThemeContext);
-}

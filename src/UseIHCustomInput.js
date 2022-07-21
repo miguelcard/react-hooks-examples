@@ -26,7 +26,7 @@ export default React.forwardRef(UseIHCustomInput)
  * -> you need to understand how the useRef hook works
  * 
  * -> But what what if you have a custom ref? (Not related to a component but 
- * compleately change how the ref worls, a custom one entirely) = then useImperativeHandle comes in 
+ * completely change how the ref works, a custom one entirely) = then useImperativeHandle comes in 
  * 
  * -> this example just shows how we can use the ref for something entirely different, and use its methods from the parent component.
  * Even if in this case is not even related to the input field ( so in this case it does not make much sense)

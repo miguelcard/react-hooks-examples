@@ -11,7 +11,7 @@ export const UseTransitionEx = () => {
 
         startTransition(() => {
             const otherList = []
-            for(let i = 0; i < 20000; i++){     // this here takes really long time, we want to render the input even before this... this is lower prio
+            for(let i = 0; i < 20000; i++){   // this here takes really long time, we want to render the input even before this... all inside startTransition is lower prio
                 otherList.push(e.target.value);
             }
             setList(otherList);

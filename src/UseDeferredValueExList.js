@@ -3,8 +3,8 @@ import React, { useMemo, useDeferredValue, useEffect } from 'react'
 export const UseDeferredValueExList = ({ input }) => {
 
     // here we are saying this is low priority and its value can wait to 
-    // chage and to render when there are no more constant changes to it, thus we give a high priority to render 
-    // first the input field where the user is typing and a secondary priority to the list computed afterwards
+    // chage and to render when there are no more constant changes to it 
+    // thus we give a high priority to render first the input field where the user is typing (in parent component) and a secondary priority to the list computed afterwards
     const deferredInput = useDeferredValue(input);
 
     const slowList = useMemo(() => {
